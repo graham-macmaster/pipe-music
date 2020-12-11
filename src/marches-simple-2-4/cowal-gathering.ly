@@ -1,4 +1,4 @@
-\include "../../common.ly"
+\include "../common.ly"
 
 \header {
   title = "Cowal Gathering"
