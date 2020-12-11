@@ -1,13 +1,9 @@
-\include "bagpipe.ly"
-\layout {
-  indent = 0.0\cm
-  \context { \Score \remove "Bar_number_engraver" }
-}
+\include "../../common.ly"
 
 \header {
   title = "Cowal Gathering"
   meter = "March"
-  arranger = "Pipe Major John McLellan D.C.M."
+  arranger = "Pipe Major John McLellan, D.C.M."
   tagline = ""
 }
 
