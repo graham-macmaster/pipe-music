@@ -2,6 +2,7 @@
 
 \paper {
   print-all-headers = ##t
+  #(set-paper-size "letter")
 }
 
 \score {
