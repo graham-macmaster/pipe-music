@@ -18,7 +18,7 @@
   \repeat volta 2 {
     \slurb b4 \thrwd d8. e16 f16 \grg b8. \thrwd d4
     \slurb b4 \thrwd d8. e16 \dblf f8. e16 \grg f16 A8.
-    \slurb b4 \thrwd d8. e16 f16 \grg b8. \thrwd d4
+    \hslurb b4 \thrwd d8. e16 f16 \grg b8. \thrwd d4
     \grg e8. f16 \dble e8. d16 \dblc c16 \gre a8. \grg c16 e8.
   }
 
