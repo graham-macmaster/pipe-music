@@ -1,4 +1,6 @@
-\include "../../common.ly"
+\version "2.24.3"
+
+\include "../common.ly"
 
 \paper {
   #(set-paper-size "letter")

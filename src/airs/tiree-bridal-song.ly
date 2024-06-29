@@ -1,3 +1,5 @@
+\version "2.24.3"
+
 \include "../common.ly"
 
 \header {
@@ -25,7 +27,7 @@
   \dble e2.
 
   \break
-  
+
   \grA f16 A8. ~ A2
   \hdble e2 d4
   \dblc c4. \grg b8 \grd a4
@@ -49,7 +51,7 @@
   \dble e2.
 
   \break
-  
+
   \grg f4. g8 A4
   \hdble e2 \dble e8 d8
   \dblc c4. \grg b8 \grd a4

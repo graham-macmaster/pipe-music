@@ -1,4 +1,10 @@
+\version "2.24.3"
+
 \include "../common.ly"
+
+\paper {
+  #(set-paper-size "letter")
+}
 
 \header {
   title = "Cowal Gathering"
@@ -33,7 +39,7 @@
     \dble e16. [ a32 \grd c32 e16. ] \dblA A8 [ c16. d32 ] \noBreak
     \dble e16. [ a32 \grg f16. e32 ] \thrwd d8 [ \grg e16. d32 ] \noBreak
     \grg c32 [ \grd a16. \grd c16. d32 ] \dble e8 [ \grg a16. \grd c32 ] \noBreak
-    \dble e16. [ a32 \grg d16. c32 ] \grg b32 [ \grG b16. \break
+    \dble e16. [ a32 \grg d16. c32 ] \grg b32 [ \grG b16.
   }
 
   \alternative {
