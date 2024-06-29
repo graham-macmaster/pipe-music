@@ -17,12 +17,10 @@ jobs:
       - name: Inspect
         uses: docker://jeandeaual/lilypond:stable
         with:
-          args: whoami
+          args: chown -R lilypond
 
       - name: Build PDF
         uses: docker://jeandeaual/lilypond:stable
-        env:
-          TMPDIR: /app/tmp
         with:
           args: lilypond --verbose src/marches-2-4/cowal-gathering.ly
 
