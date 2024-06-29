@@ -1,0 +1,26 @@
+name: build
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+
+      - name: Build PDF
+        uses: docker://jeandeaual/lilypond:stable
+        with:
+          args: lilypond -dno-point-and-click -dembed-source-code -dpaper-size=\"a4\" src/marches-2-4/cowal-gathering.ly
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cowal-gathering
+          path: cowal-gathering.pdf
