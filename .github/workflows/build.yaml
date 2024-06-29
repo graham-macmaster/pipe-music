@@ -17,7 +17,7 @@ jobs:
       - name: Build PDF
         uses: docker://jeandeaual/lilypond:stable
         with:
-          args: lilypond -dno-point-and-click -dembed-source-code -dpaper-size=\"a4\" src/marches-2-4/cowal-gathering.ly
+          args: lilypond -dno-point-and-click -dembed-source-code src/marches-2-4/cowal-gathering.ly
 
       - name: Upload artifact
         uses: actions/upload-artifact@v4
