@@ -17,7 +17,7 @@ jobs:
       - name: Inspect
         uses: docker://jeandeaual/lilypond:stable
         with:
-          args: chown -R lilypond
+          args: chown -R lilypond .
 
       - name: Build PDF
         uses: docker://jeandeaual/lilypond:stable
