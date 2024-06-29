@@ -21,6 +21,8 @@ jobs:
 
       - name: Build PDF
         uses: docker://jeandeaual/lilypond:stable
+        env:
+          TMPDIR: /app/tmp
         with:
           args: lilypond --verbose src/marches-2-4/cowal-gathering.ly
 
