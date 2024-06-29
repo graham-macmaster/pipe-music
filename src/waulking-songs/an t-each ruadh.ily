@@ -1,3 +1,5 @@
+\version "2.24.3"
+
 \include "../common.ly"
 
 \header {
@@ -5,12 +7,6 @@
   subtitle = "Roland Steele's Red Horse"
   composer = "Hector Carmichael"
 }
-
-% \paper {
-%     #(set-paper-size "a4landscape")
-% }
-
-
 
 {
   \numericTimeSignature
