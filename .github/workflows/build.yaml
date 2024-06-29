@@ -14,18 +14,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Inspect
+      - name: Build PDF
         uses: docker://jeandeaual/lilypond:stable
         with:
-          args: ls -al
+          args: lilypond --verbose src/marches-2-4/cowal-gathering.ly
 
-      # - name: Build PDF
-      #   uses: docker://jeandeaual/lilypond:stable
-      #   with:
-      #     args: lilypond --verbose src/marches-2-4/cowal-gathering.ly
-
-      # - name: Upload artifact
-      #   uses: actions/upload-artifact@v4
-      #   with:
-      #     name: cowal-gathering
-      #     path: build.pdf
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: cowal-gathering
+          path: cowal-gathering.pdf
