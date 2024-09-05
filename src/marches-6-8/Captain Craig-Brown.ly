@@ -51,7 +51,7 @@
 
   % Part 3
   \repeat volta 2 {
-    \partial 8 { f8 }
+    \partial 8 { a8 }
     \grg a8. d16 f8 \grg a8. d16 f8
     \grg d16 f8. \grg a8 A8. f16 \grg d8
     \grg e16 g8. \grA e8 \grg c16 e8. a8
